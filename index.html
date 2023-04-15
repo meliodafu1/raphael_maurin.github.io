@@ -13,6 +13,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>Personal Portfolio</title>
 </head>
@@ -20,11 +21,13 @@
 <body>
   <div class="navbar1" >
   <ul>
-  <li><a href="#home">Home</a></li>
-  <li><a href="#about">About</a></li>
-  <li><a href="#skills">Skills</a></li>
-  <li><a href="#project">Project</a></li>
-  <li><a href="#contact">Contact</a></li>
+   
+  <li><a href="#home" class="tgl hver">Home</a></li>
+  <li><a href="#about "  class="tgl">About</a></li>
+  <li><a href="#education" class="tgl">Education</a></li>
+  <li><a href="#skills" class="tgl">Skills</a></li>
+  <li><a href="#project" class="tgl">Project</a></li>
+  <li><a href="#contact" class="tgl">Contact</a></li>
 </ul>
     <div class="logo" >
      <img src="uploads\Group 86.png" >
@@ -38,10 +41,10 @@
         <div class="intro">
           
             <h1>Hello World!-></h1>
-            <h1 style="display:inline-block">I am</h1><h1 style="display:inline-block;margin-left:10px;color:#7DFFEF;">Raphael Maurin</h1>
+            <h1 style="display:inline-block">I am</h1><h1 class="auto-type" style="display:inline-block;margin-left:10px;color:#7DFFEF;"></h1>
             <br>
-            <h1>A web developer##</h1>
-            <button type="button" class="btn abt" style="height:50px;width:120px;"><span style="color:black;font-size:20px;">About Me</span></button>
+            <h1>A Web Developer##</h1>
+           <a href="#about"><button type="button" class="btn abt" style="height:50px;width:120px;"><span style="color:black;font-size:20px;">About Me</span></button></a>
                </div>
                <div class="socmed" style="display:flex">
               
@@ -59,16 +62,18 @@
 <section style="margin-top:18%;">
 <div class="about-me" id="about" >
   <div class="mrgn" style="height:250px"></div>
+ 
     <h1 style="display:inline-block">About</h1><h1 style="display:inline-block;margin-left:10px;color:#7DFFEF;">Me</h1>
-    <p> I am a 4th year student currently studying at University of Science and Technology of Southern Philippines.I am taking a bachelors degree of Information Technology. I will be graduating this year and will be open for any job offers. If you are interested kindly contact me from the information provided in the contact section.
+
+    <p> I am a 4th year student currently studying at University of Science and Technology of Southern Philippines.I am taking a bachelors degree of Information Technology. I will be graduating this year and will be open for any job offers. <br><br>If you are interested kindly contact me from the information provided in the contact section.
         You can also check my CV for more information.
      
     </p>
      <div class="bttn">
-     <button type="button" class="btn abt" style="margin-right:10px">Download CV</button>
-     <button type="button" class="btn abt">Contact Me</button>
+     <button type="button" class="btn abt" style="margin-right:10px;width:120px;">Download CV</button>
+     <a href="#contact"><button type="button" class="btn abt">Contact Me</button></a>
      </div>
-     <div class="imgcnt" style="margin-left:50px;">
+     <div class="imgcnt" style="margin-left:50px;margin-top:-30%">
        <div class="cp">
       <img src="uploads\Group 73.png">
           </div>
@@ -105,7 +110,51 @@
      </div>
 </div>
 </section>
-
+<section style="margin-top:18%;" id="education">
+  <div style="height:100px;"></div>
+<div style="text-align:center;">
+   <h1 style="display:inline-block">Education and</h1><h1 style="display:inline-block;margin-left:10px;color:#7DFFEF;">Experience</h1>
+</div>
+<div class="college" style="margin-top:5%">
+  <div class="year">
+    <span  style="padding-top:150px;">2019-2023</span><br>
+    <span class="yd" style="padding-top:150px;">College</span>
+    <span style="padding-top:150px;text-align:left;margin-left:200px;margin-top:-11%;">University of Science and Technology <br>of Southern Philippines</span>
+  </div>
+  <div class="information">
+    <p style="font-size:17px;margin-top:-120px;">BS Information Technology</p>
+    <p style="margin-top:-90px;">- Cisco Certification<br>- Job Ready Certification</p>
+  </div>
+  <div class="year">
+    <span  style="padding-top:150px;">2017-2019</span><br>
+    <span class="yd" style="padding-top:150px;">Senior High School</span>
+    <span style="padding-top:150px;text-align:left;margin-left:200px;margin-top:-11%;">Cagayan de Oro College <br>PHINMA</span>
+  </div>
+  <div class="information">
+    <p style="font-size:17px;margin-top:-120px;">TVL Track Computer Programming</p>
+   
+  </div>
+  <div class="year" style="margin-top:-30px;">
+    <span  style="padding-top:150px;">2022-2023</span><br>
+    <span class="yd" style="padding-top:150px;">Thesis</span>
+    <span style="padding-top:150px;text-align:left;margin-left:200px;margin-top:-11%;">University of Science and Technology <br>of Southern Philippines</span>
+  </div>
+  <div class="information">
+    <p style="font-size:17px;margin-top:-120px;">MapaSAKATAN</p>
+    <p style="margin-top:-90px;">- Integrated Mapping API using OpenLayers<br>- Admin Panel and Landlord Panel<br>- PHP, JavaScript and MySQL
+      <br>- Real time chat for admin and landlord<br>- Integrated PHP Mailer API for email alerts</p>
+  </div>
+  <div class="year" style="margin-top:30px;">
+    <span  style="padding-top:150px;">2022-2023</span><br>
+    <span class="yd" style="padding-top:150px;">Internship</span>
+    <span style="padding-top:150px;text-align:left;margin-left:200px;margin-top:-11%;">Gaisano City Unipace <br>Corporation</span>
+  </div>
+  <div class="information">
+    <p style="font-size:17px;margin-top:-120px;">Intern</p>
+    <p style="margin-top:-90px;">- Hardware<br>- Networking<br>- Programming (Frappe JS and Python)</p>
+  </div>
+  
+ </section>
 <section style="margin-top:15%;">
 <div class="skills" id="skills">
   <div class="mrgn"style="height:100px"></div>
@@ -197,46 +246,41 @@
     <p style="text-align:center;margin-right:22%;margin-bottom:50px">These are the projects that I made  during my college years.</p>
       <div class="box-cards">
           <div class="box">
-            <img src="uploads/Rectangle 114.png"/>
-            <h3>MapaSAKATAN</h3>
-            <div class="sp">
-            <span>A web based application that allows the users to browse boarding houses nearby USTP.</span>
-            <div class="browse" >
-              <a href="https://www.mapasakatan.tech/">
-                <button type="button" onClick="location.href='mapasakatan.tech'"class="btn abt" style="width:200px;margin-left:40px">Browse Site</button>
-
-            </div>
-          </a>
-            </div>
-          </div>
-          <div class="box-cards">
-            <div class="box">
-              <img src="uploads/vote.jpg" width="100%" height="245"/>
-              <h3>Pick Me</h3>
+            <img src="uploads/Rectangle 114.png" width="100%" height="100%"/>
+            <div class="info">
+              <h3 >MapaSAKATAN</h3>
               <div class="sp">
-              <span>A web based application that allows the users to browse boarding houses nearby USTP.</span>
-              <div class="browse">
-                <a href="https://www.mapasakatan.tech/">
-                <button type="button" onClick="location.href='mapasakatan.tech'"class="btn abt" style="width:200px;margin-left:40px">Browse Site</button>
+               <span>A web based application that allows the <br>users to browse boarding houses nearby USTP.</span>
               </div>
-            </a>
-              </div>
-            </div>
-            <div class="box-cards">
-              <div class="box">
-                <img src="uploads/Rectangle 112.png" height="245"/>
-                <h3>Task Monitoring</h3>
-                <div class="sp">
-                <span>A web based application that allows the users to browse boarding houses nearby USTP.</span>
-                <div class="browse" >
-                  <a href="https://www.mapasakatan.tech/">
-                    <button type="button" onClick="location.href='mapasakatan.tech'"class="btn abt" style="width:200px;margin-left:40px">Browse Site</button>
+              <a href="https://mapasakatan.tech"><span class="hv" style="font-size:18px;margin-bottom:-10px;margin-left:90px;" onClick="">View Website</span></a>
 
-                </div>
-              </a>
-                </div>
+          </div>
+            <hr>
+          </div>
+          <div class="box">
+            <img src="uploads/Rectangle 112.png" width="100%" height="100%"/>
+            <div class="info">
+              <h3 >Task Monitoring</h3>
+              <div class="sp">
+               <span style="margin-left:25px;">A web based application that allows the <br>users to monitor his/her task.</span>
               </div>
-      </div>
+              <a href=""><span class="hv" style="font-size:18px;margin-bottom:-10px;margin-left:100px;" onClick="">View Website</span></a>
+
+          </div>
+            <hr>
+          </div>
+          <div class="box">
+            <img src="uploads/vote.jpg" width="100%" height="100%"/>
+            <div class="info">
+              <h3 style="margin-left:110px;">PickMe</h3>
+              <div class="sp">
+               <span style="margin-left:20px;">A web based application that allows the <br>users to vote through website.</span>
+              </div>
+            <a href=""><span class="hv" style="font-size:18px;margin-bottom:-10px;margin-left:100px;" onClick="">View Website</span></a>
+          </div>
+            <hr>
+          </div>
+        
       
   </div>
 </section>
@@ -258,7 +302,7 @@
         <label for="exampleFormControlTextarea1" style="color:white">Message</label>
         <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Enter your message" rows="3"></textarea>
       </div>
-      <button type="button" class="btn abt" style="font-size:18px;margin-bottom:-10px">Submit</button>
+      <button type="button" class="btn abt" style="font-size:18px;margin-top:-5px;float:right;margin-right:30%">Submit</button>
   </div>
 
 </div>
@@ -268,6 +312,16 @@
 </div>
 </footer>
 </section>
-    
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+<script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+<script>
+var type = new Typed(".auto-type", {
+  strings: ["Raphael Maurin"],
+  typeSpeed:100,
+  backSpeed:100,
+  loop:true
+});
+</script>
 </body>
 </html>
